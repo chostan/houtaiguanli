@@ -43,3 +43,20 @@ export function deleteUserById(id) {
   })
 }
 
+export function getRoles() {
+  return request({
+    url: '/roles/',
+  })
+}
+
+export function putUserRoleById(id, rid) {
+  return request({
+    url: '/users/' + id + '/role',
+    method: 'put',
+    data: {
+      id: id,
+      rid: rid
+    }
+  })
+}
+
