@@ -9,7 +9,7 @@
       :collapse="isCollapse"
       :collapse-transition="false"
       router
-      :default-active="$route.path"
+      :default-active="$route.path.split('/')[0]"
     >
       <!-- 一级菜单 -->
       <el-submenu :index="item.id + ''" v-for="item in menuList" :key="item.id">

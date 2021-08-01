@@ -8,6 +8,8 @@ const Rights = () => import('views/power/Rights')
 const Roles = () => import('views/power/Roles')
 const Category = () => import('views/goods/Category')
 const Params = () => import('views/goods/Params')
+const GoodsList = () => import('views/goods/List')
+const Add = () => import('views/goods/Add')
 
 const Welcome = () => import('components/content/Welcome')
 
@@ -50,6 +52,14 @@ const routes = [
       {
         path: '/params',
         component: Params
+      },
+      {
+        path: '/goods',
+        component: GoodsList
+      },
+      {
+        path: '/goods/add',
+        component: Add
       }
     ]
   }
