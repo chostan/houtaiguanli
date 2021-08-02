@@ -10,6 +10,7 @@ const Category = () => import('views/goods/Category')
 const Params = () => import('views/goods/Params')
 const GoodsList = () => import('views/goods/List')
 const Add = () => import('views/goods/Add')
+const Order = () => import('views/order/Order')
 
 const Welcome = () => import('components/content/Welcome')
 
@@ -60,6 +61,10 @@ const routes = [
       {
         path: '/goods/add',
         component: Add
+      },
+      {
+        path: '/orders',
+        component: Order
       }
     ]
   }
