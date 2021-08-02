@@ -11,6 +11,7 @@ const Params = () => import('views/goods/Params')
 const GoodsList = () => import('views/goods/List')
 const Add = () => import('views/goods/Add')
 const Order = () => import('views/order/Order')
+const Report = () => import('views/report/Report')
 
 const Welcome = () => import('components/content/Welcome')
 
@@ -65,6 +66,10 @@ const routes = [
       {
         path: '/orders',
         component: Order
+      },
+      {
+        path: '/reports',
+        component: Report
       }
     ]
   }
