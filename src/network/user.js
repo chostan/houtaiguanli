@@ -9,7 +9,7 @@ export function getUserList(options) {
 
 export function putUserState(options) {
   return request({
-    method: '/put',
+    method: 'put',
     url: options
   })
 }
