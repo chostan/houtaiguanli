@@ -38,11 +38,7 @@ export function deleteRoleById(id) {
 export function deleteRoleRightById(roleId, rightId) {
   return request({
     url: '/roles/' + roleId + '/rights/' + rightId,
-    method: 'delete',
-    data: {
-      roleId: roleId,
-      rightId: rightId
-    }
+    method: 'delete'
   })
 }
 
